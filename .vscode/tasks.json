@@ -6,6 +6,7 @@
             "command": "C:\\ProgramData\\chocolatey\\bin\\gcc.exe",
             "args": [
                 "-fdiagnostics-color=always",
+
                 "-g",
                 /* default */
                 /* C/C++ compiles one .c files */
@@ -16,17 +17,23 @@
                 "${fileDirname}\\*.c",
                 "${fileDirname}\\*.h",
                 
+
                 "-o",
                 /* default */
                 // "${fileDirname}\\${fileBasenameNoExtension}.exe"
 
                 /* for CodeRunner-test3 */
                 /* generate .exe file to specified location */
-                "${fileDirname}\\bin\\${fileBasenameNoExtension}.exe"
+                // "${fileDirname}\\bin\\${fileBasenameNoExtension}.exe"
                 /* or */
                 // "${cwd}\\CodeRunner-test3\\bin\\${fileBasenameNoExtension}.exe"
                 /* or */
                 // "${workspaceFolder}\\CodeRunner-test3\\bin\\${fileBasenameNoExtension}.exe"
+
+                /* for CodeRunner-test4 */
+                // "${workspaceFolder}\\CodeRunner-test4\\bin\\${fileBasenameNoExtension}.exe"
+                /* or */
+                "${cwd}\\CodeRunner-test4\\bin\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
                 "cwd": "${fileDirname}"

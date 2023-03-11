@@ -33,6 +33,20 @@
   * Use "Code Runner"
     1. Run Code
 
+* Setup in the VSCode
+  * tasks.json : Used to define tasks for building, which includes compiling and linking programs.
+  * launch.json : Used to configure the debugging env, such as the debugger (gdb), executable file path, etc.
+  * settings.json : Configures file for the VSCode editor that stores various editor settings. For this case, it used to configure the code runner.
+
+* Variables Reference in VSCode
+  * Link : [Variables Reference](https://code.visualstudio.com/docs/editor/variables-reference)
+  * Predefined variables
+    * ${cwd}
+    * ${workspaceFolder}
+    * ${file}
+    * ${fileDirname}
+    * ${fileBasenameNoExtension}
+
 ## Learning Target ##
 
 * learning curve
