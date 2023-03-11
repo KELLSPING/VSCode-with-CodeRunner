@@ -5,17 +5,27 @@
         // "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         // "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
 
+
         /* for CodeRunner-test2 */
         /* CodeRunner compiles multi .c files */
         // "c": "cd $dir && gcc *.c -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         // "cpp": "cd $dir && g++ *.cpp -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
 
+
         /* for CodeRunner-test3 */
         /* CodeRunner compiles multi .c files and generate .exe file to specified location */
-        "c": "cd $dir && gcc *.c -o .\\bin\\$fileNameWithoutExt && .\\bin\\$fileNameWithoutExt",
-        "cpp": "cd $dir && g++ *.cpp -o .\\bin\\$fileNameWithoutExt && .\\bin\\$fileNameWithoutExt",
+        // "c": "cd $dir && gcc *.c -o .\\bin\\$fileNameWithoutExt && .\\bin\\$fileNameWithoutExt",
+        // "cpp": "cd $dir && g++ *.cpp -o .\\bin\\$fileNameWithoutExt && .\\bin\\$fileNameWithoutExt",
         /* or */
         // "c": "cd $dir && gcc *.c -o $workspaceRoot\\CodeRunner-test3\\bin\\$fileNameWithoutExt && $workspaceRoot\\CodeRunner-test3\\bin\\$fileNameWithoutExt",
         // "cpp": "cd $dir && g++ *.cpp -o $workspaceRoot\\CodeRunner-test3\\bin\\$fileNameWithoutExt && $workspaceRoot\\CodeRunner-test3\\bin\\$fileNameWithoutExt",
+
+
+        /* for CodeRunner-test4 */
+        // "c": "cd $dir && gcc *.c -o ..\\bin\\$fileNameWithoutExt && ..\\bin\\$fileNameWithoutExt",
+        // "cpp": "cd $dir && g++ *.cpp -o ..\\bin\\$fileNameWithoutExt && ..\\bin\\$fileNameWithoutExt",
+        /* or */
+        "c": "cd $dir && gcc *.c -o $workspaceRoot\\CodeRunner-test4\\bin\\$fileNameWithoutExt && $workspaceRoot\\CodeRunner-test4\\bin\\$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ *.cpp -o $workspaceRoot\\CodeRunner-test4\\bin\\$fileNameWithoutExt && $workspaceRoot\\CodeRunner-test4\\bin\\$fileNameWithoutExt",
     }
 }
