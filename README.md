@@ -19,7 +19,6 @@
 * VSCode Extension
   * C/C++, C/C++ Extension Pack, C/C++ Themes
   * Code Runner
-  * C/C++ Project Generator
 
 ## Notes ##
 
