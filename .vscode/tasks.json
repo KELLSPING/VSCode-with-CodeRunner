@@ -11,13 +11,22 @@
                 /* C/C++ compiles one .c files */
                 // "${file}",
 
-                /* for CodeRunner-test2 */
+                /* for CodeRunner-test2, CodeRunner-test3 */
                 /* C/C++ compiles multi .c files */
                 "${fileDirname}\\*.c",
                 "${fileDirname}\\*.h",
                 
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                /* default */
+                // "${fileDirname}\\${fileBasenameNoExtension}.exe"
+
+                /* for CodeRunner-test3 */
+                /* generate .exe file to specified location */
+                "${fileDirname}\\bin\\${fileBasenameNoExtension}.exe"
+                /* or */
+                // "${cwd}\\CodeRunner-test3\\bin\\${fileBasenameNoExtension}.exe"
+                /* or */
+                // "${workspaceFolder}\\CodeRunner-test3\\bin\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
                 "cwd": "${fileDirname}"
